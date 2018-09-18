@@ -8,7 +8,7 @@ len1=0;
 [R len0 len1]=callCKMeansIni(X,p,h,m);
 
 Xproj = X*R; % pre-projecting X
-[C, sumds, idxs_best]=yael_kmeans (Xproj', h, 'niter', 10, 'verbose', 0);
+[C, sumds, idxs_best]=yael_kmeans(Xproj', h, 'niter', 10, 'verbose', 0);
 sumds_best=sum(sumds);
 for i = 1:1%m %earlier
     Xsub = Xproj(:, (1:d) + (i-1)*d);

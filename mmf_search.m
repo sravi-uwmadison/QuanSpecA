@@ -20,9 +20,9 @@ for query = 1:nq
   end 
 
   % add the tabulated distances to construct the distance estimators
-  disquerybase = sumidxtab (distab, cbase, 0);
+  disquerybase = sumidxtab(distab, cbase, 0);
  
-  [dis1, ids1] = yael_kmin ((disquerybase), k);
+  [dis1, ids1] = yael_kmin((disquerybase), k);
   
   dis(query, :) = dis1;
   ids(query, :) = ids1;

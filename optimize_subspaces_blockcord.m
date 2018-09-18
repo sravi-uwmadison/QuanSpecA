@@ -12,7 +12,7 @@ if(numel(prevX)==0)
 else
     X=prevX;
   %  X=initializeX(n,m);
-   X=initializeX(n,m,iniC,C,prevX); 
+    X=initializeX(n,m,iniC,C,prevX); 
 end
 if(nargin<3)
     seq=1;%sequenial selection
